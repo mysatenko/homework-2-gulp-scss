@@ -1,0 +1,289 @@
+@import '_vars';
+@import '_fonts';
+
+
+html {
+	box-sizing: border-box;
+}
+*,*::after,*::before {
+	box-sizing: inherit;
+}
+body {
+	min-width: 320px;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+.container {
+	padding: 0 15px;
+}
+@media (min-width: 575.98px){
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px){
+  .container {
+    max-width: 720px;	
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1140px;
+  }
+}
+// Page section top
+
+
+.top__inner {
+	margin-bottom: 15px;
+	&-img {
+	max-width: 100%;
+	}
+}
+
+//  Page saction posts
+
+
+.post-title {
+	font-family: Roboto;
+	font-size: 16px;
+	text-transform: uppercase;
+	@include f700;
+	color: $text-title;
+}
+.post__inner-text {
+	display: none;
+}
+.post__inner {
+	padding-bottom: 28px;
+	display: flex;
+}
+	// @media (min-width: 768px) {	
+	// 	.post-wrap {
+	// 		display: flex;
+			
+	// 	}
+	// }
+		@media (min-width: 320px) {
+		
+			.post__inner {
+				display: block;
+			}
+		}
+		@media (min-width: 500px) {
+			.post__inner-wrap {
+				margin-left: 20px;
+				
+			}
+			.post__inner {
+				display: flex;
+			}
+		}
+	@media (min-width: 1200px) {
+		.post-wrap {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.post__inner {
+			width: 49%;
+		}
+		.post__inner-wrap {
+			margin-left: 20px;
+			
+		}
+	}
+
+	.post__inner-text {
+		display: block;
+		font-size: 14px;
+		line-height: 26px;
+		color: #5C5C5C;
+		width: 100%;
+	}
+
+
+
+.post__inner-title {
+	font-size: 16px;
+	color: $text-title;
+	
+}
+.post__inner-link {
+	text-decoration: none;
+	
+}
+.post__inner-name {
+	@include f400;
+	font-size: 14px;
+	text-decoration: none;
+	color: $text-link;  
+}
+.post__inner-separator {
+	margin: 0 5px;
+	color: $text-link;  
+}
+.post__inner-comment {
+	@include f400;
+	font-size: 14px;
+	color: $text-link;
+}
+
+
+
+.shot-inner {
+	overflow: hidden;
+}
+.shot__inner-title {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.shot__inner-block {
+	margin-right: 10px;
+	flex-shrink: 1;
+}
+
+@media (min-width: 320px) {
+	.shot-one {
+		display: block;
+	}
+	.shot-two,.shot-three,.shot-four {
+		display: none;
+	}
+	.right {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.shot__inner {
+		display: flex;
+	}
+	.shot-one,.shot-two,.shot-three {
+		display: block;
+	}
+	.shot-four {
+		display: none;
+	}
+	.right {
+		display: block;
+	}
+	.shot__inner-img{
+		width: 100%;
+	}
+}
+@media (min-width: 1200px) {
+	.shot__inner {
+		display: flex;
+	}
+	.shot-one,.shot-two,.shot-three,.shot-four{
+		display: block;
+	}
+	.right {
+		display: block;
+	}
+	.shot__inner-img{
+		width: 285px;
+	}
+	
+}
+
+	
+
+	.shot-title {
+		text-transform: uppercase;
+		font-size: 16px;
+		@include f700;
+	}
+
+
+
+
+
+// footer
+
+.footer {
+	background-color: #000000;
+
+	&-title {
+		padding-top: 38px;
+		text-transform: uppercase;
+		font-size: 16px;
+		text-align: center;
+		color: #FEFEFE;
+
+	}
+	&-text {
+		font-size: 14px;
+		text-align: center;
+		color: #B9B9B9;
+		line-height: 20px;
+		margin-bottom: 37px;
+	}
+}
+.footer__social-list {
+	display: flex;
+	justify-content: center;
+
+}
+.footer__social-link {
+	padding: 10px;
+	border-radius: 50%;
+	margin-right: 6px;
+	
+}
+.one {
+	border: 2px solid #F8902E;
+}
+.two {
+	border: 2px solid #39599F;
+}
+.three {
+	border: 2px solid #45B0E3;
+}
+.four {
+	border: 2px solid #D97AB0;
+}
+.five {
+	border: 2px solid #CC212C;
+}
+.footer__contacts {
+	padding: 10px 0;
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+	}
+	@media (min-width: 1200px) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.footer__contect-title {
+	font-size: 16px;
+	text-align: center;
+	color: #B9B9B9;
+}
+.footer__contact-phone {
+	font-size: 16px;
+	text-align: center;
+	color: #B9B9B9;
+	text-decoration: none;
+}
+.footer__contact-email {
+	font-size: 16px;
+	text-align: center;
+	color: #B9B9B9;
+	text-decoration: none;
+}
+
+

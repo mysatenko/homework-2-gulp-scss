@@ -1,0 +1,12 @@
+$text-title: #4E4E4E;
+$text-link: #7C7C7C;;
+
+
+@mixin f400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+@mixin f700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
